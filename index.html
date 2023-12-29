@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trình Hình Ảnh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="product">
+      <div class="product-small-img">
+        <img src="./images/image_1.png" onclick="myFunction(this)" />
+        <img src="./images/image_2.png" onclick="myFunction(this)" />
+        <img src="./images/image_6.avif" onclick="myFunction(this)" />
+        <img src="./images/image_7.avif" onclick="myFunction(this)" />
+        <img src="./images/image_5.avif" onclick="myFunction(this)" />
+      </div>
+
+      <div class="img-container">
+        <img id="imageBox" src="./images/image_1.png" />
+      </div>
+    </div>
+
+    <script>
+      function myFunction(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+      /**
+       * Hàm này nhận một tham số là một phần tử hình ảnh nhỏ (smallImg).
+       * Khi được gọi, nó sẽ cập nhật nguồn (src) của một phần tử hình ảnh lớn
+       * (được xác định bởi ID "imageBox") để hiển thị hình ảnh lớn tương ứng
+       * với hình ảnh nhỏ được chọn. */
+    </script>
+  </body>
+</html>

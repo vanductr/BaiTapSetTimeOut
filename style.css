@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.product-small-img img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .6;
+}
+.product-small-img img:hover{
+    opacity: 1;
+    /* được sử dụng để xác định độ mờ (độ trong suốt) của một phần tử.  */
+}
+.product-small-img{
+    float: left;
+    /* được sử dụng để cố gắng đưa một phần tử về phía trái của phần tử mẹ của nó
+     và làm cho các phần tử khác chen vào bên phải của nó. */
+}
+.product{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    /*  position: absolute; được sử dụng để đặt phần tử ở chính giữa của container mẹ
+     (thường là body hoặc một phần tử mẹ khác), và transform: translate(-50%, -50%);
+      giúp đưa phần tử về giữa chính xác. */
+}
+.img-container img{
+    height: 500px;
+}
+.img-container{
+    float: right;
+    padding: 10px;
+}
